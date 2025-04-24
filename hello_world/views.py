@@ -11,7 +11,7 @@ def index():
     output = request.args.get('output')
     if not output:
         output = PLAIN
-    return get_formatted(msg, moje_imie,
+    return get_formatted(msg, Kamil,
                          output.lower())
 
 @app.route('/outputs')
